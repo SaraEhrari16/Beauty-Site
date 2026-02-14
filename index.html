@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop💃</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        /* Product & Service Cards Hover Effect */
+        .card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+       /* Hero / Image Section */
+.img {
+    min-height: 60vh; /* Responsive height */
+    padding: clamp(2rem, 5vw, 6rem); /* Responsive spacing */
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: backgroundSlider 20s ease-in infinite;
+}
+
+/* Background Animation */
+@keyframes backgroundSlider {
+    0% {
+        background-image: url("https://wwd.com/wp-content/uploads/2022/11/2226_001.jpg?w=1000&h=563&crop=1");
+    }
+
+    25% {
+        background-image: url("https://cdn.shopify.com/s/files/1/1320/6585/files/female-friends-looking-for-beauty-products-in-cosm-2023-11-27-05-09-19-utc_1_600x600.jpg?v=1725957699");
+    }
+
+    50% {
+        background-image: url("https://imgproxy.divecdn.com/tEPpIh2KzIpX-pkETQzdBAAamlA_bUz4quJ1gmY0PwM/g:ce/rs:fill:1600:0:0/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9DdWVfdGhlX05ldy5qcGc=.webp");
+    }
+
+    75% {
+        background-image: url("https://urban-adventurer.net/wp-content/uploads/2024/05/Galm-Touch-K-Beauty-Store-London.jpg");
+    }
+
+    100% {
+        background-image: url("https://thumbs.dreamstime.com/b/assortment-haircare-products-cosmetic-shop-barcelona-spain-november-shelves-206496279.jpg");
+    }
+}
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Beauty Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- salider section  -->
+        <div class="img"></div>
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2>About Us</h2>
+                        <p>
+                            At Beauty Shop, beauty is more than a routine — it’s an experience. Discover luxurious
+                            products, refined elegance,
+                            and personalized care crafted to elevate your style. We blend quality, sophistication, and
+                            passion to create
+                            a world where your beauty truly shines. Beauty Shop is your destination for premium beauty
+                            products and expert care.
+                            Our mission is to help you look and feel confident by providing quality products and
+                            exceptional service in a welcoming environment.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="https://media.istockphoto.com/id/933154330/photo/variety-of-assortment-of-modern-cosmetics-store.jpg?s=612x612&w=0&k=20&c=p751Qiwjv_zRBzG56jrQgXQ5JUWS5HJ9M8Fk-CLPjBs="
+                            class="img-fluid rounded" alt="Beauty Shop">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Products</h2>
+                <div class="row g-4">
+
+                    <!-- Foundation -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://img.freepik.com/free-vector/foundation-isolated-cosmetics-vector-realistic-skin-care-bottles-label-design-product-placement_1268-18108.jpg?semt=ais_user_personalization&w=740&q=80"
+                                class="card-img-top" alt="Foundation">
+                            <div class="card-body">
+                                <h5 class="card-title">Foundation</h5>
+                                <p class="card-text">
+                                    A smooth, lightweight foundation that provides natural-looking coverage while
+                                    allowing your skin to breathe.
+                                </p>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eyeshadow -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://media.istockphoto.com/id/483790073/photo/colorful-circle-pattern-creative-abstract-design-background-photo.jpg?s=612x612&w=0&k=20&c=g0yNZI9xd-H_2ORD01hUTRx986yOcJWeFJwhzUPcDZI="
+                                class="card-img-top" alt="Eyeshadow">
+                            <div class="card-body">
+                                <h5 class="card-title">Eyeshadow</h5>
+                                <p class="card-text">
+                                    Elevate your eye makeup with a velvety eyeshadow that delivers intense color and
+                                    elegance.
+                                </p>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lipstick -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1JgEJc1HreL3Kqa0hBiGSmjcA2Zr5mLQIag"
+                                class="card-img-top" alt="Lipstick">
+                            <div class="card-body">
+                                <h5 class="card-title">Lipstick</h5>
+                                <p class="card-text">
+                                    A creamy, long-lasting lipstick that delivers rich color and a smooth, comfortable
+                                    finish.
+                                </p>
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Our Services 💖</h2>
+                    <p>Enhance your natural beauty with our professional beauty services.</p>
+                </div>
+                <div class="row g-4">
+
+                    <!-- Example Service Card -->
+
+
+                    <!-- Makeup -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://media.istockphoto.com/id/952087564/photo/makeup-artist-applies-eye-shadow.jpg?s=612x612&w=0&k=20&c=1q9YNF8wSefQSbmysXa9ZMYnR_iujCymtzRV1W1uRJ0="
+                                class="card-img-top" alt="Makeup">
+                            <div class="card-body">
+                                <h5 class="card-title">Makeup</h5>
+                                <p class="card-text">Professional makeup services for weddings, parties, and everyday
+                                    looks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skincare -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://img.forestessentialsindia.com/blog/wp-content/uploads/2021/12/1-1.jpg"
+                                class="card-img-top" alt="Skincare">
+                            <div class="card-body">
+                                <h5 class="card-title">Skincare</h5>
+                                <p class="card-text">Facials, masks, and treatments to cleanse, hydrate, and rejuvenate
+                                    your skin.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hair Styling -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP7YeuR2SUbEtwUbLSAXAMyWcAm8hF1KzaYg&s"
+                                class="card-img-top" alt="Hair Styling">
+                            <div class="card-body">
+                                <h5 class="card-title">Hair Styling</h5>
+                                <p class="card-text">Creative haircuts, coloring, and styling tailored to your
+                                    personality and style.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nail Care -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://summitsalonacademykc.com/wp-content/uploads/2023/10/blog_1575589880234492352.png"
+                                class="card-img-top" alt="Nail Care">
+                            <div class="card-body">
+                                <h5 class="card-title">Nail Care</h5>
+                                <p class="card-text">Manicure, pedicure, and creative nail art to complete your look.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spa -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://www.alayaspa.in/wp-content/uploads/2025/01/Luxury-Spa-Gurgaon.jpg"
+                                class="card-img-top" alt="Spa">
+                            <div class="card-body">
+                                <h5 class="card-title">Spa</h5>
+                                <p class="card-text">Relaxing spa treatments and massages to refresh your body and mind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eyebrow & Lash Care  -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFnMOW0QVzuE0Fl2-_3jk0IaeNRckwAjW1g&s"
+                                class="card-img-top" alt="eyebrow& lash care eyebrow">
+                            <div class="card-body">
+                                <h5 class="card-title">Eyebrow & Lash CareEyebrow</h5>
+                                <p class="card-text">Professional eyebrow shaping, tinting, and eyelash extensions to
+                                    define your eyes beautifully.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Body Treatments  -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://www.bellacollina.com/hubfs/Spa/Massage%20Bella%20Colina.jpg"
+                                class="card-img-top" alt="body treatment">
+                            <div class="card-body">
+                                <h5 class="card-title">Body Treatments</h5>
+                                <p class="card-text">Rejuvenating body scrubs, wraps, and massages to relax and refresh
+                                    your skin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Makeup Consultations  -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 text-center shadow-sm">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKliWfyD557rK1JuD4pITD-v5qNk8JR4OIw&"
+                                class="card-img-top" alt="Makeup Consultations">
+                            <div class="card-body">
+                                <h5 class="card-title">Makeup Consultations</h5>
+                                <p class="card-text">Personalized makeup advice and tutorials to help you find your
+                                    perfect look.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="text-center mb-5">
+                    <h2>Contact Us 📞</h2>
+                    <p>Have questions about our products or services? Reach out to us! We’re here to help you look and
+                        feel your best.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Contact Form -->
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-md-6">
+                        <h5>Get in Touch</h5>
+                        <p><strong>Phone:</strong>0704287954</p>
+                        <p><strong>Email:</strong> beauty@shop.com</p>
+                        <p><strong>Address:</strong> 123 Beauty Street, Herat, Afghanistan</p>
+
+                        <h5 class="mt-4">Follow Us</h5>
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">Instagram</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">Facebook</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">TikTok</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">Pinterest</a>
+                    </div>
+                </div>
+
+                <!-- Optional Map -->
+                <!--
+                                    <div class="row mt-5">
+                                        <div class="col-12">
+                                            <iframe src="YOUR_GOOGLE_MAPS_EMBED_LINK" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        </div>
+                                    </div>
+                                    -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
